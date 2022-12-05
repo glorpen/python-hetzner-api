@@ -6,9 +6,9 @@ __all__ = ['StorageBox', 'SubAccount', 'SubAccountManager']
 
 
 class SubAccount(object):
-    def __init__(self, conn, box_id_, result):
+    def __init__(self, conn, box_id, result):
         self.conn = conn
-        self.box_id_ = box_id_
+        self.box_id = box_id
         self.update_info(result)
 
     def update_info(self, result):
